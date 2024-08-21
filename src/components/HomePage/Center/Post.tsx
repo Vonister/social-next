@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Comments from "./Comments";
+import Image from 'next/image';
+import Comments from './Comments';
 
 const Post = () => {
   return (
@@ -9,7 +9,7 @@ const Post = () => {
         <div className="flex items-center gap-4">
           <Image
             src={
-              "https://images.pexels.com/photos/1316484/pexels-photo-1316484.jpeg?auto=compress&cs=tinysrgb&w=600"
+              'https://images.pexels.com/photos/1316484/pexels-photo-1316484.jpeg?auto=compress&cs=tinysrgb&w=600'
             }
             alt="Avatar"
             width={40}
@@ -22,7 +22,7 @@ const Post = () => {
           </div>
         </div>
         <Image
-          src={"/more.png"}
+          src={'/more.png'}
           alt="Avatar"
           width={16}
           height={16}
@@ -34,10 +34,11 @@ const Post = () => {
         <div className="w-full min-h-96 relative">
           <Image
             src={
-              "https://images.pexels.com/photos/1316484/pexels-photo-1316484.jpeg?auto=compress&cs=tinysrgb&w=600"
+              'https://images.pexels.com/photos/1316484/pexels-photo-1316484.jpeg?auto=compress&cs=tinysrgb&w=600'
             }
             alt="Avatar"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover rounded-md"
           />
         </div>
@@ -53,43 +54,43 @@ const Post = () => {
         <div className="flex gap-8">
           <div className="flex items-center gap-4 bg-slate-100 p-2 rounded-xl">
             <Image
-              src={"/like.png"}
+              src={'/like.png'}
               alt="Avatar"
               width={16}
               height={16}
               className="cursor-pointer"
             />
-            <span className="text-gray-300">|</span>{" "}
+            <span className="text-gray-300">|</span>{' '}
             <span className="text-gray-500">
-              123 <span className="hidden md:inline">Likes</span>{" "}
+              123 <span className="hidden md:inline">Likes</span>{' '}
             </span>
           </div>
           <div className="flex items-center gap-4 bg-slate-50 p-2 rounded-xl">
             <Image
-              src={"/comment.png"}
+              src={'/comment.png'}
               alt="Avatar"
               width={16}
               height={16}
               className="cursor-pointer"
             />
-            <span className="text-gray-300">|</span>{" "}
+            <span className="text-gray-300">|</span>{' '}
             <span className="text-gray-500">
-              123 <span className="hidden md:inline">Comments</span>{" "}
+              123 <span className="hidden md:inline">Comments</span>{' '}
             </span>
           </div>
         </div>
         <div>
           <div className="flex items-center gap-4 bg-slate-50 p-2 rounded-xl">
             <Image
-              src={"/share.png"}
+              src={'/share.png'}
               alt="Avatar"
               width={16}
               height={16}
               className="cursor-pointer"
             />
-            <span className="text-gray-300">|</span>{" "}
+            <span className="text-gray-300">|</span>{' '}
             <span className="text-gray-500">
-              123 <span className="hidden md:inline">Shares</span>{" "}
+              123 <span className="hidden md:inline">Shares</span>{' '}
             </span>
           </div>
         </div>
